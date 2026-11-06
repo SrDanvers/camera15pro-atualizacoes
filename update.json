@@ -1,8 +1,8 @@
 {
-  "versionCode": 28,
-  "versionName": "2.0.1",
-  "minVersionCode": 28,
-  "apkUrl": "https://github.com/SrDanvers/camera15pro-atualizacoes/releases/download/v2.0.1/Camera_15_Pro_2.0.1_A17.apk",
-  "sha256": "ed5368c3d72c368a32d465fe953f6df78ba2714837b7dd328923a034d64e7749",
-  "notes": "Entrada simplificada: símbolo enviado em fundo branco, sem textos na abertura. Atualização obrigatória para teste do canal."
+  "versionCode": 30,
+  "versionName": "2.0.3",
+  "minVersionCode": 30,
+  "apkUrl": "https://github.com/SrDanvers/camera15pro-atualizacoes/releases/download/v2.0.3/Camera_15_Pro_2.0.3_A17.apk",
+  "sha256": "685fac094a478ff2723bed7a3582f9c18ad70f73c37c8445b6ff60693451a3e4",
+  "notes": "Teste obrigatório: entrada somente com o símbolo enviado e verificação de atualização independente da abertura da câmera."
 }
