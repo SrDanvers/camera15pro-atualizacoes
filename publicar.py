@@ -15,7 +15,9 @@ m=re.search(r"package: name='([^']+)' versionCode='(\d+)' versionName='([^']+)'"
 if not m or m[1]!='br.com.denny.camera':raise SystemExit('Pacote incorreto')
 cert=subprocess.check_output([str(signer),'verify','--print-certs','camera.apk'],text=True)
 pinned=pathlib.Path('certificado-sha256.txt').read_text().strip()
-if 'Signer #1 certificate SHA-256 digest: '+pinned not in cert:raise SystemExit('Assinatura diferente da oficial')
+digests=re.findall(r'certificate SHA-256 digest:\s*([0-9a-fA-F:]+)',cert,re.I)
+normalize=lambda value: value.replace(':','').strip().lower()
+if not digests or any(normalize(value)!=normalize(pinned) for value in digests):raise SystemExit('Assinatura diferente da oficial')
 code=int(m[2]);old=json.loads(pathlib.Path('update.json').read_text()) if pathlib.Path('update.json').exists() else {}
 if code<int(old.get('versionCode',0)):raise SystemExit('Versao inferior ao canal atual')
 manifest=dict(versionCode=code,versionName=m[3],minVersionCode=code,apkUrl=url,sha256=hashlib.sha256(data).hexdigest(),notes=(release.get('body') or 'Nova versão disponível')[:2000])
