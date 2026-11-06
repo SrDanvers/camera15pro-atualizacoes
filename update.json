@@ -1,8 +1,8 @@
 {
-  "versionCode": 30,
-  "versionName": "2.0.3",
-  "minVersionCode": 30,
-  "apkUrl": "https://github.com/SrDanvers/camera15pro-atualizacoes/releases/download/v2.0.3/Camera_15_Pro_2.0.3_A17.apk",
-  "sha256": "685fac094a478ff2723bed7a3582f9c18ad70f73c37c8445b6ff60693451a3e4",
-  "notes": "Teste obrigatório: entrada somente com o símbolo enviado e verificação de atualização independente da abertura da câmera."
+  "versionCode": 31,
+  "versionName": "2.0.4",
+  "minVersionCode": 31,
+  "apkUrl": "https://github.com/SrDanvers/camera15pro-atualizacoes/releases/download/v2.0.4/Camera_15_Pro_2.0.4_A17.apk",
+  "sha256": "680c4ecabcbed0a674dee2aa6b3edafabaacb2033ff8b066e1bcd8102f9877bd",
+  "notes": "Corrige o arquivo da abertura: símbolo preto da Apple em fundo branco, sem textos. Créditos permanecem no Sobre."
 }
